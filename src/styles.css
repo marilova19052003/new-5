@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+  text-align: center;
+}
+
+.card-container {
+  margin-top: 10px;
+}
+
+.card {
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  position: relative;
+}
+
+.card:hover {
+  background-color: #d1d1d1;
+}
+
+.card .delete-card {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: red;
+}

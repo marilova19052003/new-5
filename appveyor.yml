@@ -1,0 +1,13 @@
+version: 1.0.{build}
+image: Visual Studio 2019
+configuration: Release
+install:
+  - ps: Install-Product node 14
+  - yarn install
+build_script:
+  - yarn build
+deploy:
+  provider: GitHub
+  github_account: <ваш_аккаунт>
+  github_repository: <ваш_репозиторий>
+  on_success: true
